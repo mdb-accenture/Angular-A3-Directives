@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectiveComponent implements OnInit {
   show: boolean = false;
-  logs: number[] = [];
+  // logs: number[] = [];
+  logs: Date[] = [];
 
   constructor() {}
 
   ngOnInit() {}
 
   onClick() {
-    this.logs.push(this.logs.length + 1);
+    // this.logs.push(this.logs.length + 1);
+    this.logs.push(new Date());
   }
 }
